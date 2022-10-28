@@ -25,7 +25,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "heatmapjs": "file:./heatmapjs",
+    "heatmapjs": "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
