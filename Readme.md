@@ -1,4 +1,4 @@
-# React Heatmap
+# Heatmapjs React
 
 A very simple port of `heatmap.js` for `React`. The idea behind this component is to be able to display a heatmap over any type of content (image, div, components ...).
 Inspired by [react-heatmap](https://github.com/mazedesignhq/react-heatmap).
@@ -35,7 +35,7 @@ import { heatmap as Heatmap } from "@sarpere/heatmapjs-react";
 const App = () => {
     const data = [{ x: 10, y: 15, value: 5}, { x: 50, y: 50, value: 2}, ...];
     return (
-        <ReactHeatmap max={5} data={data} />
+        <Heatmap max={5} data={data} />
     )
 }
 ```
