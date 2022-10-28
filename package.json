@@ -50,5 +50,9 @@
     "email": "sarperekinci@hotmail.com",
     "name": "Sarper Ekinci",
     "url": "https://sarpere.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarpere/heatmapjs-react"
   }
 }
