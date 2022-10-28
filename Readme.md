@@ -30,7 +30,7 @@ Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
 ## Usage
 
-```bash
+```js
 import { heatmap as Heatmap } from "@sarpere/heatmapjs-react";
 const App = () => {
     const data = [{ x: 10, y: 15, value: 5}, { x: 50, y: 50, value: 2}, ...];
