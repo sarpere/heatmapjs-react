@@ -21,7 +21,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "heatmapjs": "file:./heatmapjs",
