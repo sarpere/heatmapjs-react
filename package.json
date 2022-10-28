@@ -2,7 +2,7 @@
   "name": "@sarpere/heatmapjs-react",
   "description": "Heatmapjs React bindings",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "types": "./dist/index.d.ts",
   "files": [
