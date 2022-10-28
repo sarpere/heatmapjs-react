@@ -1,11 +1,12 @@
-import { units } from "./Enums";
+import { units } from "../Enums";
 
-type value = { x: number; y: number };
-
+type percentValue = { x: number; y: number; value: number };
+type pxValue = number;
+type value = percentValue | pxValue;
 interface HeatmapReactProps {
   max: number;
   data: Array<value>;
-  unit: units;
+  unit?: units.decimal | units.percent;
 }
 
 interface config {

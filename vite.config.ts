@@ -1,13 +1,14 @@
 import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-
+import dts from "vite-plugin-dts";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/lib/index.tsx"),
-      name: "Heatmapjs React",
-      fileName: (format) => `heatmapjs-react.${format}.ts`,
+      entry: path.resolve(__dirname, "src/index.ts"),
+      name: "heatmapjs-react",
+      formats: ["es", "umd"],
+      fileName: (format) => `heatmapjs-react.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
@@ -17,6 +18,14 @@ export default defineConfig({
         },
       },
     },
+    commonjsOptions: {
+      exclude: ["src/heatmapjs/*"],
+    },
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+    }),
+  ],
 });

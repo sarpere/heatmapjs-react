@@ -1,8 +1,13 @@
 {
   "name": "@sarpere/heatmapjs-react",
+  "description": "Heatmapjs React bindings",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "main": "./dist/heatmapjs-react.umd.js",
   "module": "./dist/heatmapjs-react.es.js",
   "exports": {
@@ -19,7 +24,7 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "heatmapjs": "^2.0.2",
+    "heatmapjs": "file:./heatmapjs",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -31,6 +36,7 @@
     "@vitejs/plugin-react": "^2.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.6.6",
     "vitest": "^0.23.4"
   },
   "keywords": [
@@ -43,6 +49,5 @@
     "email": "sarperekinci@hotmail.com",
     "name": "Sarper Ekinci",
     "url": "https://sarpere.com"
-  },
-  "description": "Heatmapjs React bindings"
+  }
 }
