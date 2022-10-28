@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { heatmap as Heatmap } from "@sarpere/heatmapjs-react";
-import { value } from "@sarpere/heatmapjs-react/dist/types";
+import { value } from "@sarpere/heatmapjs-react/dist/src/types";
 const data = [
   { x: 10, y: 15, value: 5 },
   { x: 50, y: 50, value: 2 },

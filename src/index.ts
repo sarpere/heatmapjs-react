@@ -1,1 +1,1 @@
-export { default as heatmap } from "./lib/heatmapjs-react";
+export { default as Heatmap } from "./lib/heatmapjs-react";
