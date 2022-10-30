@@ -54,5 +54,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sarpere/heatmapjs-react"
+  },
+  "publishConfig": {
+    "@sarpere:registry": "https://npm.pkg.github.com"
   }
 }
