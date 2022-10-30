@@ -12,6 +12,8 @@ Live Demo: [@sarpere/heatmapjs-react](https://sarpere.com/heatmapjs-react)
     yarn dev
 ```
 
+<img src="/docs/example.jpg" alt="@sarpere/heatmapjs-react example" width="100%" />
+
 Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
 ## Installation
