@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { heatmap as Heatmap } from "@sarpere/heatmapjs-react";
-import { value } from "@sarpere/heatmapjs-react/dist/src/types";
-const data = [
-  { x: 10, y: 15, value: 5 },
-  { x: 50, y: 50, value: 2 },
-];
+import { Heatmap, MapValue } from "@sarpere/heatmapjs-react";
+
 function App() {
-  const [data, setData] = useState<value[]>([]);
+  const [data, setData] = useState<MapValue[]>([]);
   const randFromInterval = (min: number, max: number) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
