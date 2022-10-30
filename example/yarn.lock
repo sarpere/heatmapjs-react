@@ -290,10 +290,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@sarpere/heatmapjs-react@file:..":
-  version "0.0.2"
+"@sarpere/heatmapjs-react@file:../":
+  version "0.0.6"
   dependencies:
-    heatmapjs "file:../../../../Library/Caches/Yarn/v6/npm-@sarpere-heatmapjs-react-0.0.2-0fe1bec9-9e8b-4387-a895-05a4c3a12e1f-1666979077608/node_modules/@sarpere/heatmapjs-react/heatmapjs"
+    heatmapjs "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master"
     react "^18.2.0"
     react-dom "^18.2.0"
 
@@ -571,8 +571,9 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-"heatmapjs@file:../heatmapjs":
+"heatmapjs@https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master":
   version "2.0.2"
+  resolved "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master#1196e5f006bfab56356751d68aba7b04de546ffd"
 
 is-core-module@^2.9.0:
   version "2.11.0"
