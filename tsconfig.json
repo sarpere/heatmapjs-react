@@ -12,11 +12,11 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true, 
-    "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "typeRoots": ["src/types/index.d.ts"],
   },
+  "declarationDir": "types",
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
