@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useRef } from "react";
-import { HeatmapReactProps, percentValue, value } from "../types";
 import { units } from "../Enums";
 import heatmapjs, { heatmapjsObj } from "heatmapjs";
+import { HeatmapReactProps, MapValue, percentValue } from "../types";
 const HeatmapReact = (props: HeatmapReactProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const heatmapRef = useRef<heatmapjsObj | null>(null);
-  const computeData = (data: value[]) => {
+  const computeData = (data: MapValue[]) => {
     if (props.unit === units.percent) {
       let container = {
         width: 0,
@@ -24,7 +24,7 @@ const HeatmapReact = (props: HeatmapReactProps) => {
       return data;
     }
   };
-  const setData = (max: number, data: value[]) => {
+  const setData = (max: number, data: MapValue[]) => {
     heatmapRef.current?.setData({
       max: max,
       data: computeData(data),

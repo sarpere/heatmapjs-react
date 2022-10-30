@@ -18,9 +18,6 @@ export default defineConfig({
         },
       },
     },
-    commonjsOptions: {
-      exclude: ["src/heatmapjs/*"],
-    },
   },
   plugins: [
     react(),
