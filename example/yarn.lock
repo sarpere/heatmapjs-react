@@ -291,18 +291,9 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@sarpere/heatmapjs-react@file:..":
-  version "0.0.6"
+  version "0.0.7"
   dependencies:
     heatmapjs "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master"
-    react "^18.2.0"
-    react-dom "^18.2.0"
-
-"@sarpere/heatmapjs-react@file:../":
-  version "0.0.6"
-  dependencies:
-    heatmapjs "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master"
-    react "^18.2.0"
-    react-dom "^18.2.0"
 
 "@types/prop-types@*":
   version "15.7.5"

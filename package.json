@@ -25,9 +25,11 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "heatmapjs": "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "heatmapjs": "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master"
+  },
+  "peerDependencies": {
+    "react": " >=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@testing-library/react": "^13.4.0",
@@ -35,6 +37,8 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vite-plugin-dts": "^1.6.6",
