@@ -8,8 +8,8 @@ Inspired by [react-heatmap](https://github.com/mazedesignhq/react-heatmap).
 Live Demo: [@sarpere/heatmapjs-react](https://sarpere.com/heatmapjs-react)
 
 ```bash
-    yarn
-    yarn dev
+yarn
+yarn dev
 ```
 
 <img src="/docs/example.png" alt="@sarpere/heatmapjs-react example" width="100%" />
