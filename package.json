@@ -25,7 +25,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "heatmapjs": "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master"
+    "heatmapjs": "heatmap.js"
   },
   "peerDependencies": {
     "react": " >=16.8.0",

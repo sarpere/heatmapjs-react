@@ -44,8 +44,26 @@ const App = () => {
 
 ## Props
 
-| Prop | Type   | Default | Required | Description                                                                                                                     |
-| ---- | ------ | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| max  | int    | 5       | No       | Maximum value for intensity                                                                                                     |
-| data | array  | []      | No       | Heatmap array of dots                                                                                                           |
-| unit | string | percent | No       | Can be either `percent` or `pixels`. If percent, a `x` value like `26` is considered **26% of the container from the top left** |
+| Prop | Type | Default | Required | Description |
+|--|--|--|--|--|
+|max| int | 5 | No | Maximum value for intensity |
+| data | array | [] | No | Heatmap array of dots |
+| unit | string | decimal | No | Can be either `percent` or `decimal`. If percent, a `x` value like `26` is considered **26% of the container from the top left**|
+| config |HeatmapConfig |  `json`            | No | Can be either `percent` or `decimal`. If percent, a `x` value like `26` is considered **26% of the container from the top left**|
+|        | | `   {`                          | | |
+|        | | ` "radius": 40,`                    | | |
+|        | | ` "renderer": "canvas2d",` | | |
+|        | | ` "gradient": {`                 | | |
+|        | | `   0.25: "rgb(0,0,255)",` | | |
+|        | | `   0.55: "rgb(0,255,0)",` | | |
+|        | | `   0.85: "yellow",` | | |
+|        | | `   1.0: "rgb(255,0,0)",` | | |
+|        | | ` },`                             | | |
+|        | | ` "maxOpacity": 1,`                             | | |
+|        | | ` "minOpacity": 0,`                             | | |
+|        | | ` "blur": 0.85,`                             | | |
+|        | | ` "xField": "x",`                             | | |
+|        | | ` "yField": "y",`                             | | |
+|        | | ` "valueField": "value",`                             | | |
+|        | | ` "plugins": {},`                             | | |
+|        | | `}`                             | | |

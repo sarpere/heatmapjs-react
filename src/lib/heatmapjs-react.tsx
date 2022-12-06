@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef } from "react";
-import { units } from "../Enums";
 import heatmapjs, { heatmapjsObj } from "heatmapjs";
 import {
   customValue,
@@ -11,7 +10,7 @@ const HeatmapReact = (props: HeatmapReactProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const heatmapRef = useRef<heatmapjsObj | null>(null);
   const computeData = (data: MapValue[]) => {
-    if (props.unit === units.percent) {
+    if (props.unit === "percent") {
       let container = {
         width: 0,
         height: 0,
@@ -75,7 +74,7 @@ var HeatmapConfig = {
   plugins: {},
 };
 HeatmapReact.defaultProps = {
-  unit: units.decimal,
+  unit: "decimal",
   config: HeatmapConfig,
 };
 export default HeatmapReact;
