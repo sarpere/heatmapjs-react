@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Heatmap } from "@sarpere/heatmapjs-react";
-import { MapValue } from "@sarpere/heatmapjs-react/src/types";
+import { MapValue } from "@sarpere/heatmapjs-react/dist/src/types";
 
 function App() {
   const [data, setData] = useState<MapValue[]>([]);
