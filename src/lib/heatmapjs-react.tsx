@@ -1,12 +1,8 @@
 import { useEffect, useMemo, useRef } from "react";
-import { units } from "../Enums";
+import { units } from "../enums";
 import heatmapjs, { heatmapjsObj } from "heatmapjs";
-import {
-  customValue,
-  HeatmapReactProps,
-  MapValue,
-  percentValue,
-} from "../types";
+import { customValue, HeatmapReactProps, MapValue } from "../types";
+import { heatmapjsUtils } from "../utils";
 const HeatmapReact = (props: HeatmapReactProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const heatmapRef = useRef<heatmapjsObj | null>(null);
@@ -20,13 +16,9 @@ const HeatmapReact = (props: HeatmapReactProps) => {
       container.height = containerRef.current?.offsetHeight ?? 0;
       return (data as customValue[]).map(function (values, index) {
         return {
-          x: Math.round(
-            (values[props.config?.xField ?? "x"] / 100) * container.width
-          ),
-          y: Math.round(
-            (values[props.config?.yField ?? "y"] / 100) * container.height
-          ),
-          value: values[props.config?.valueField ?? "value"],
+          x: Math.round((values[props.xField] / 100) * container.width),
+          y: Math.round((values[props.yField] / 100) * container.height),
+          value: values[props.valueField],
         };
       });
     } else {
@@ -39,13 +31,20 @@ const HeatmapReact = (props: HeatmapReactProps) => {
       data: computeData(data),
     });
   };
-
+  const createHeatmapInstane = () => {
+    if (!containerRef.current) return null;
+    const heatmapjsConfig = heatmapjsUtils.getHeatmapjsConfig(props);
+    return heatmapjs.create(
+      Object.assign(
+        {
+          container: containerRef.current,
+        },
+        heatmapjsConfig
+      )
+    );
+  };
   useEffect(() => {
-    if (containerRef.current)
-      heatmapRef.current = heatmapjs.create({
-        container: containerRef.current,
-        ...props.config,
-      });
+    heatmapRef.current = createHeatmapInstane();
     setData(props.max, props.data);
   }, []);
   useMemo(() => {
@@ -76,6 +75,7 @@ var HeatmapConfig = {
 };
 HeatmapReact.defaultProps = {
   unit: units.decimal,
-  config: HeatmapConfig,
+  data: [],
+  ...HeatmapConfig,
 };
 export default HeatmapReact;

@@ -8,13 +8,21 @@ Inspired by [react-heatmap](https://github.com/mazedesignhq/react-heatmap).
 Live Demo: [@sarpere/heatmapjs-react](https://sarpere.com/heatmapjs-react)
 
 ```bash
-    yarn
-    yarn dev
+yarn
+yarn dev
 ```
 
 <img src="/docs/example.png" alt="@sarpere/heatmapjs-react example" width="100%" />
 
 Then open [`localhost:8000`](http://localhost:8000) in a browser.
+
+### <img src="/docs/storybook.png" alt="@sarpere/heatmapjs-react storybook" height="18px" /> Storybook
+
+```bash
+yarn storybook
+```
+
+Then open [`localhost:8000`](http://localhost:6006/) in a browser.
 
 ## Installation
 
