@@ -16,6 +16,14 @@ yarn dev
 
 Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
+### <img src="/docs/storybook.png" alt="@sarpere/heatmapjs-react storybook" width="50px" /> Storybook
+
+```bash
+yarn storybook
+```
+
+Then open [`localhost:8000`](http://localhost:6006/) in a browser.
+
 ## Installation
 
 ### npm
