@@ -16,7 +16,7 @@ yarn dev
 
 Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
-### <img src="/docs/storybook.png" alt="@sarpere/heatmapjs-react storybook" height="40px" /> Storybook
+### <img src="/docs/storybook.png" alt="@sarpere/heatmapjs-react storybook" height="18px" /> Storybook
 
 ```bash
 yarn storybook
