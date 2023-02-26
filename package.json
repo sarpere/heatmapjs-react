@@ -27,7 +27,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "heatmapjs": "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs?master"
+    "heatmapjs": "https://gitpkg.now.sh/sarpere/heatmapjs-react/heatmapjs\\?master"
   },
   "peerDependencies": {
     "react": " >=16.8.0",

@@ -38,3 +38,21 @@ Basic.args = {
   data: setRandomData(),
   max: maxValue,
 };
+
+
+
+const Template2: ComponentStory<typeof Heatmap> = (args) => (
+  <div style={{ width: 200, height: 'auto', position: "relative" }}>
+    <img width="100%" height="100%" src="/stadium.jpeg" alt="Stadium" />
+    <div style={{ position: "absolute", top: 0, left: 0 }}>
+      <Heatmap  {...args} />
+    </div>
+  </div>
+);
+
+export const OverlayPhoto = Template2.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+OverlayPhoto.args = {
+  data: setRandomData(),
+  max: maxValue,
+};
